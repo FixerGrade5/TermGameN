@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เลือกเกมและแพ็กเกจ — GACHA TOPUP</title>
+  <meta name="description" content="เลือกเกม เซิร์ฟเวอร์ และแพ็กเกจที่ต้องการเติม ราคาแสดงชัดเจนทุกรายการ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="index.html">
+      <span class="navbar__brand-mark" aria-hidden="true"></span>
+      GACHA TOPUP
+    </a>
+
+    <nav class="navbar__links" aria-label="เมนูหลัก">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="games.html" class="is-active">เกมทั้งหมด</a>
+      <a href="index.html#how-it-works">วิธีเติม</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="games.html" class="btn btn-primary btn-sm navbar__cta">เติมเกมตอนนี้</a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        class="navbar__toggle"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="navbar-mobile-menu"
+      >&#9776;</button>
+    </div>
+  </header>
+
+  <nav id="navbar-mobile-menu" class="navbar__mobile-menu" aria-label="เมนูมือถือ">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="games.html" class="is-active">เกมทั้งหมด</a>
+    <a href="index.html#how-it-works">วิธีเติม</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="games.html" class="btn btn-primary btn-block">เติมเกมตอนนี้</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ Page Header ============ -->
+    <section class="page-header">
+      <div class="container">
+        <h1>เลือกเกมที่ต้องการเติม</h1>
+        <p>เลือกเกม เซิร์ฟเวอร์ และแพ็กเกจ ราคาแสดงชัดเจนทุกรายการ</p>
+      </div>
+    </section>
+
+    <!-- ============ Game Selection ============ -->
+    <section class="section" id="game-selection">
+      <div class="container">
+
+        <!-- ตัวกรอง: หมวดหมู่ / เกม -->
+        <div class="filter-bar">
+          <div class="select-wrap">
+            <label for="category-filter" class="sr-only">กรองตามหมวดหมู่</label>
+            <select id="category-filter" class="select">
+              <option value="">ทุกหมวดหมู่</option>
+            </select>
+          </div>
+          <div class="select-wrap">
+            <label for="game-filter" class="sr-only">เลือกเกม</label>
+            <select id="game-filter" class="select">
+              <option value="">เลือกเกม</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- รายการเกม (render โดย script.js จาก products.json) -->
+        <div id="game-list" class="grid grid--3col" aria-live="polite">
+          <div class="loading-row">
+            <span class="spinner" aria-hidden="true"></span>
+            กำลังโหลดรายการเกม...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Package Selection ============ -->
+    <section class="section" id="package-selection">
+      <div class="container">
+        <div class="section-head">
+          <h2>เลือกแพ็กเกจ</h2>
+          <p>เลือกเกมด้านบนก่อน เพื่อดูแพ็กเกจและราคาที่รองรับ</p>
+        </div>
+
+        <!-- ตัวเลือกเซิร์ฟเวอร์ (แสดงเฉพาะเกมที่มีมากกว่า 1 เซิร์ฟเวอร์) -->
+        <div class="filter-bar">
+          <div class="select-wrap">
+            <label for="server-filter" class="sr-only">เลือกเซิร์ฟเวอร์</label>
+            <select id="server-filter" class="select" hidden></select>
+          </div>
+        </div>
+
+        <!-- Empty state: ยังไม่ได้เลือกเกม / ไม่มีแพ็กเกจ -->
+        <p id="package-empty" class="empty-state">
+          กรุณาเลือกเกมด้านบนเพื่อดูแพ็กเกจที่รองรับ
+        </p>
+
+        <!-- รายการแพ็กเกจ (render โดย script.js) -->
+        <div id="package-list" class="grid grid--2col" aria-live="polite"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">GACHA TOPUP</div>
+          <p>บริการเติมเกมกาชาสำหรับเกมยอดนิยม ใช้งานง่าย ปลอดภัย ไม่ขอข้อมูลลับของบัญชี</p>
+        </div>
+        <div>
+          <div class="footer__heading">เกมที่รองรับ</div>
+          <div class="footer__links">
+            <a href="games.html?game=genshin">Genshin Impact</a>
+            <a href="games.html?game=hsr">Honkai: Star Rail</a>
+            <a href="games.html?game=zzz">Zenless Zone Zero</a>
+            <a href="games.html?game=wuwa">Wuthering Waves</a>
+            <a href="games.html?game=fgo">Fate/Grand Order</a>
+            <a href="games.html?game=umamusume">Uma Musume Pretty Derby</a>
+            <a href="games.html?game=chaoszero">Chaos Zero Nightmare</a>
+            <a href="games.html?game=limbus">Limbus Company</a>
+            <a href="games.html?game=bluearchive">Blue Archive</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">ช่องทางติดต่อ</div>
+          <div class="footer__links">
+            <a href="#">Line: @gachatopup</a>
+            <a href="#">Facebook Page</a>
+            <a href="#">อีเมลติดต่อแอดมิน</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 GACHA TOPUP. สงวนลิขสิทธิ์.</span>
+        <span>บริการเติมเกมอิสระ ไม่มีส่วนเกี่ยวข้องกับผู้พัฒนาเกมโดยตรง</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GACHA TOPUP ADMIN</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="admin.html">
+      <span class="navbar__brand-mark" aria-hidden="true"></span>
+      GACHA TOPUP ADMIN
+    </a>
+    <nav class="navbar__links" aria-label="เมนู">
+      <a href="index.html">กลับหน้าร้าน</a>
+    </nav>
+    <div class="navbar__actions">
+      <button
+        type="button"
+        id="navbar-toggle"
+        class="navbar__toggle"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="navbar-mobile-menu"
+      >&#9776;</button>
+    </div>
+  </header>
+
+  <nav id="navbar-mobile-menu" class="navbar__mobile-menu" aria-label="เมนูมือถือ">
+    <a href="index.html">กลับหน้าร้าน</a>
+  </nav>
+
+  <main id="admin-page">
+    <section class="page-header">
+      <div class="container">
+        <h1>Order Dashboard</h1>
+        <p>ดูและค้นหาคำสั่งซื้อทั้งหมดจาก Google Sheet</p>
+      </div>
+    </section>
+
+    <!-- ============ Security Note (ตามข้อกำหนดด้านความปลอดภัย) ============ -->
+    <section class="container">
+      <div class="alert alert-warning" role="alert">
+        <p>หน้านี้ควรใช้หลังระบบ authentication / network protection ที่เหมาะสม หน้านี้เป็น Static Page ที่ไม่มีระบบยืนยันตัวตนในตัวเอง จึงไม่ควรฝัง Password หรือกลไก Authentication ใดๆ ไว้ใน JavaScript ของหน้านี้ (source code ฝั่ง client เปิดดูได้เสมอ) — ควรจำกัดการเข้าถึงหน้านี้ด้วยการควบคุมระดับเครือข่าย/เซิร์ฟเวอร์ หรือระบบ authentication ที่แยกต่างหากแทน</p>
+      </div>
+    </section>
+
+    <!-- ============ Dashboard Stats ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--5col">
+          <div class="panel stat-card">
+            <span class="stat-card__label">Total Orders</span>
+            <span class="stat-card__value" id="stat-total">0</span>
+          </div>
+          <div class="panel stat-card stat-card--pending">
+            <span class="stat-card__label">Pending</span>
+            <span class="stat-card__value" id="stat-pending">0</span>
+          </div>
+          <div class="panel stat-card stat-card--processing">
+            <span class="stat-card__label">Processing</span>
+            <span class="stat-card__value" id="stat-processing">0</span>
+          </div>
+          <div class="panel stat-card stat-card--completed">
+            <span class="stat-card__label">Completed</span>
+            <span class="stat-card__value" id="stat-completed">0</span>
+          </div>
+          <div class="panel stat-card stat-card--cancelled">
+            <span class="stat-card__label">Cancelled</span>
+            <span class="stat-card__value" id="stat-cancelled">0</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Search + Filters ============ -->
+    <section class="section section--flush-top">
+      <div class="container">
+
+        <div class="filter-bar">
+          <div class="select-wrap">
+            <label for="searchOrders" class="sr-only">ค้นหา Order</label>
+            <input
+              type="search"
+              id="searchOrders"
+              class="input"
+              placeholder="ค้นหา Order ID, Customer, Contact, Game, Player ID"
+            >
+          </div>
+
+          <div class="select-wrap">
+            <label for="statusFilter" class="sr-only">กรองตามสถานะ</label>
+            <select id="statusFilter" class="select">
+              <option value="">All</option>
+              <option value="Pending">Pending</option>
+              <option value="Processing">Processing</option>
+              <option value="Completed">Completed</option>
+              <option value="Cancelled">Cancelled</option>
+              <option value="Problem">Problem</option>
+            </select>
+          </div>
+
+          <div class="select-wrap">
+            <label for="gameFilterAdmin" class="sr-only">กรองตามเกม</label>
+            <select id="gameFilterAdmin" class="select">
+              <option value="">All</option>
+              <option value="Genshin Impact">Genshin Impact</option>
+              <option value="Honkai: Star Rail">Honkai: Star Rail</option>
+              <option value="Zenless Zone Zero">Zenless Zone Zero</option>
+              <option value="Wuthering Waves">Wuthering Waves</option>
+              <option value="Fate/Grand Order">Fate/Grand Order</option>
+              <option value="Uma Musume Pretty Derby">Uma Musume Pretty Derby</option>
+              <option value="Chaos Zero Nightmare">Chaos Zero Nightmare</option>
+              <option value="Limbus Company">Limbus Company</option>
+              <option value="Blue Archive">Blue Archive</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- ============ States: loading / empty / error ============ -->
+        <div id="ordersLoading" class="loading-row">
+          <span class="spinner" aria-hidden="true"></span>
+          กำลังโหลดข้อมูล Order...
+        </div>
+
+        <p id="ordersEmpty" class="empty-state" hidden>
+          ไม่พบ Order ที่ตรงกับเงื่อนไขที่ค้นหา
+        </p>
+
+        <div id="ordersError" class="alert alert-error" role="alert" hidden>
+          โหลดข้อมูล Order ไม่สำเร็จ กรุณาตรวจสอบการเชื่อมต่อ หรือรีเฟรชหน้าใหม่อีกครั้ง
+        </div>
+
+        <!-- ============ Orders Table ============ -->
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Contact</th>
+                <th>Game</th>
+                <th>Server</th>
+                <th>Player ID</th>
+                <th>Player Name</th>
+                <th>Package</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Note</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTableBody">
+              <!-- script.js จะเป็นผู้เติมแถวข้อมูลทั้งหมด -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>&copy; 2026 GACHA TOPUP. สงวนลิขสิทธิ์.</span>
+        <span>หน้านี้สำหรับผู้ดูแลระบบเท่านั้น</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

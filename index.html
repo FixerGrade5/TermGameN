@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GACHA TOPUP — เติมเกมกาชา ง่าย รวดเร็ว ปลอดภัย</title>
+  <meta name="description" content="บริการเติมเกมกาชาสำหรับเกมยอดนิยม เลือกเกม เลือกแพ็กเกจ กรอก UID แล้วรอรับบริการ ตรวจสอบสถานะ Order ได้ทุกเมื่อ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="index.html">
+      <span class="navbar__brand-mark" aria-hidden="true"></span>
+      GACHA TOPUP
+    </a>
+
+    <nav class="navbar__links" aria-label="เมนูหลัก">
+      <a href="index.html" class="is-active">หน้าหลัก</a>
+      <a href="games.html">เกมทั้งหมด</a>
+      <a href="#how-it-works">วิธีเติม</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="games.html" class="btn btn-primary btn-sm navbar__cta">เติมเกมตอนนี้</a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        class="navbar__toggle"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="navbar-mobile-menu"
+      >&#9776;</button>
+    </div>
+  </header>
+
+  <nav id="navbar-mobile-menu" class="navbar__mobile-menu" aria-label="เมนูมือถือ">
+    <a href="index.html" class="is-active">หน้าหลัก</a>
+    <a href="games.html">เกมทั้งหมด</a>
+    <a href="#how-it-works">วิธีเติม</a>
+    <a href="#faq">FAQ</a>
+    <a href="games.html" class="btn btn-primary btn-block">เติมเกมตอนนี้</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="container hero__layout">
+        <div>
+          <h1 class="hero__title">เติมเกมกาชา ง่าย รวดเร็ว พร้อมลุยทุกเกมที่คุณชอบ</h1>
+          <p class="hero__subtitle">บริการเติมเกมสำหรับเกมยอดนิยม พร้อมระบบสั่งซื้อออนไลน์และตรวจสอบรายการได้ง่าย</p>
+          <div class="hero__actions">
+            <a href="games.html" class="btn btn-primary">เลือกเกมที่ต้องการเติม</a>
+            <a href="#how-it-works" class="btn btn-secondary">ดูวิธีการเติม</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="88" height="88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="60,4 112,32 112,88 60,116 8,88 8,32" stroke="currentColor" stroke-width="2"/>
+            <polygon points="60,28 92,46 92,74 60,92 28,74 28,46" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Trust Section ============ -->
+    <section class="section" id="trust">
+      <div class="container">
+        <div class="section-head">
+          <h2>ทำไมต้องเติมกับเรา</h2>
+        </div>
+        <div class="grid grid--4col">
+          <div class="panel feature-panel">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7l8-4 8 4-8 4-8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+            </span>
+            <h3>รองรับหลายเกม</h3>
+            <p>ครอบคลุมเกมกาชายอดนิยมทั้ง HoYoverse, Kuro Games, Aniplex และอื่นๆ ในที่เดียว</p>
+          </div>
+          <div class="panel feature-panel">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a2.5 2.5 0 000 5h5a2.5 2.5 0 010 5H7"/></svg>
+            </span>
+            <h3>ราคาแสดงชัดเจน</h3>
+            <p>เห็นราคาก่อนสั่งซื้อทุกครั้ง ไม่มีค่าใช้จ่ายแอบแฝง แพ็กเกจไหนไม่มีราคาระบุไว้ชัดเจนว่าให้ติดต่อแอดมิน</p>
+          </div>
+          <div class="panel feature-panel">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </span>
+            <h3>ตรวจสอบ Order ได้</h3>
+            <p>ทุกคำสั่งซื้อมีเลข Order ID ให้อ้างอิง ใช้ติดตามสถานะกับแอดมินได้ทันที</p>
+          </div>
+          <div class="panel feature-panel">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            </span>
+            <h3>รองรับมือถือ</h3>
+            <p>ใช้งานง่ายบนมือถือทุกขนาดหน้าจอ สั่งเติมเกมได้ทุกที่ทุกเวลา</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Game Section ============ -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">เกมยอดนิยม</span>
+          <h2>เกมที่รองรับ</h2>
+          <p>เลือกเกมที่ต้องการ แล้วไปดูแพ็กเกจและราคาแบบเต็มในหน้าเลือกเกม</p>
+        </div>
+
+        <div class="grid grid--3col">
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/genshin.jpg" alt="Genshin Impact" loading="lazy">
+            <div class="game-card__title">Genshin Impact</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Asia / America / Europe / TW-HK-MO</div>
+            <a href="games.html?game=genshin" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/honkai-star-rail.jpg" alt="Honkai: Star Rail" loading="lazy">
+            <div class="game-card__title">Honkai: Star Rail</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Asia / America / Europe / TW-HK-MO</div>
+            <a href="games.html?game=hsr" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/zenless-zone-zero.jpg" alt="Zenless Zone Zero" loading="lazy">
+            <div class="game-card__title">Zenless Zone Zero</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Asia / America / Europe / TW-HK-MO</div>
+            <a href="games.html?game=zzz" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/wuthering-waves.jpg" alt="Wuthering Waves" loading="lazy">
+            <div class="game-card__title">Wuthering Waves</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Asia / America / Europe / SEA / HMT</div>
+            <a href="games.html?game=wuwa" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/fate-go.jpg" alt="Fate/Grand Order" loading="lazy">
+            <div class="game-card__title">Fate/Grand Order</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Global / JP</div>
+            <a href="games.html?game=fgo" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/uma-musume.jpg" alt="Uma Musume Pretty Derby" loading="lazy">
+            <div class="game-card__title">Uma Musume Pretty Derby</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Global / JP</div>
+            <a href="games.html?game=umamusume" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/chaos-zero-nightmare.jpg" alt="Chaos Zero Nightmare" loading="lazy">
+            <div class="game-card__title">Chaos Zero Nightmare</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Global</div>
+            <a href="games.html?game=chaoszero" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/limbus-company.jpg" alt="Limbus Company" loading="lazy">
+            <div class="game-card__title">Limbus Company</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Global</div>
+            <a href="games.html?game=limbus" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+          <div class="game-card">
+            <img class="game-card__image" src="images/blue-archive.jpg" alt="Blue Archive" loading="lazy">
+            <div class="game-card__title">Blue Archive</div>
+            <div class="game-card__meta">เซิร์ฟเวอร์: Global / JP</div>
+            <a href="games.html?game=bluearchive" class="btn btn-secondary btn-sm">เติมเกม</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How It Works ============ -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">ขั้นตอนง่ายๆ</span>
+          <h2>วิธีการเติมเกม</h2>
+        </div>
+
+        <ol class="grid grid--3col">
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">1</span>
+            <h3>เลือกเกม</h3>
+            <p>เลือกเกมที่ต้องการเติมจากรายการเกมที่รองรับ</p>
+          </li>
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">2</span>
+            <h3>เลือก Package</h3>
+            <p>เลือกแพ็กเกจและเซิร์ฟเวอร์ที่ตรงกับบัญชีของคุณ</p>
+          </li>
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">3</span>
+            <h3>กรอก UID / Player ID</h3>
+            <p>กรอกข้อมูลที่จำเป็นสำหรับเติมเกม ไม่ต้องใช้รหัสผ่านใดๆ</p>
+          </li>
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">4</span>
+            <h3>ตรวจสอบข้อมูล</h3>
+            <p>ตรวจสอบเกม เซิร์ฟเวอร์ แพ็กเกจ และราคาให้ถูกต้องก่อนส่ง</p>
+          </li>
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">5</span>
+            <h3>ส่ง Order</h3>
+            <p>กดยืนยันคำสั่งซื้อ ระบบจะออกเลข Order ID ให้ทันที</p>
+          </li>
+          <li class="panel step">
+            <span class="step__index" aria-hidden="true">6</span>
+            <h3>รอรับบริการ</h3>
+            <p>แอดมินดำเนินการเติมเกมให้ตามคิว พร้อมแจ้งผลผ่านช่องทางที่คุณให้ไว้</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Security ============ -->
+    <section class="section" id="security">
+      <div class="container">
+        <div class="security-banner">
+          <span class="security-banner__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9.5 12.5l1.8 1.8L15 10.5"/></svg>
+          </span>
+          <div class="security-banner__text">
+            <h3>เราไม่ขอ Password หรือ OTP ของบัญชีเกม</h3>
+            <p>ทุกคำสั่งซื้อใช้เพียง UID / Player ID / เซิร์ฟเวอร์เท่าที่จำเป็นเท่านั้น เราจะไม่มีวันสอบถามรหัสผ่านเกม, รหัสผ่าน Google/Apple, รหัส OTP หรือข้อมูลลับของบัญชีคุณไม่ว่ากรณีใดก็ตาม</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">คำถามที่พบบ่อย</span>
+          <h2>FAQ</h2>
+        </div>
+
+        <div>
+          <details class="faq-item">
+            <summary>เติมเกมใช้เวลานานแค่ไหน</summary>
+            <p>โดยทั่วไปคำสั่งซื้อจะดำเนินการภายในเวลาทำการของร้าน ระยะเวลาที่แน่นอนอาจแตกต่างกันไปตามคิวและช่วงเวลาที่สั่งซื้อ</p>
+          </details>
+          <details class="faq-item">
+            <summary>ต้องให้ Password บัญชีเกมหรือไม่</summary>
+            <p>ไม่ต้อง เราใช้เพียง UID / Player ID และเซิร์ฟเวอร์เท่านั้น ห้ามกรอก Password หรือ OTP ในแบบฟอร์มโดยเด็ดขาด</p>
+          </details>
+          <details class="faq-item">
+            <summary>ถ้าราคาแพ็กเกจแสดงว่า "ติดต่อแอดมิน" ต้องทำอย่างไร</summary>
+            <p>แพ็กเกจบางรายการยังไม่มีราคาระบุไว้ในระบบ กดปุ่ม "สอบถามราคา" เพื่อติดต่อแอดมินโดยตรงก่อนทำการสั่งซื้อ</p>
+          </details>
+          <details class="faq-item">
+            <summary>เติมเกมเซิร์ฟเวอร์ต่างประเทศได้หรือไม่</summary>
+            <p>ได้ ระบบรองรับหลายเซิร์ฟเวอร์ต่อเกม กรุณาเลือกเซิร์ฟเวอร์ให้ตรงกับบัญชีของคุณในหน้าเลือกแพ็กเกจ</p>
+          </details>
+          <details class="faq-item">
+            <summary>ตรวจสอบสถานะ Order ได้อย่างไร</summary>
+            <p>เก็บเลข Order ID ที่ได้รับหลังส่งคำสั่งซื้อไว้ แล้วแจ้งเลขนี้กับแอดมินเพื่อตรวจสอบสถานะ</p>
+          </details>
+          <details class="faq-item">
+            <summary>สั่งซื้อผิดพลาดสามารถแก้ไขได้หรือไม่</summary>
+            <p>กรุณาตรวจสอบข้อมูลให้ครบถ้วนก่อนกดส่ง Order หากพบข้อผิดพลาดหลังส่งแล้ว ให้ติดต่อแอดมินพร้อมแจ้ง Order ID โดยเร็วที่สุด</p>
+          </details>
+          <details class="faq-item">
+            <summary>ชำระเงินอย่างไร</summary>
+            <p>หลังส่ง Order แอดมินจะแจ้งช่องทางการชำระเงินให้ผ่านช่องทางติดต่อที่คุณระบุไว้ในแบบฟอร์ม</p>
+          </details>
+          <details class="faq-item">
+            <summary>รองรับมือถือหรือไม่</summary>
+            <p>รองรับ เว็บไซต์ออกแบบมาให้ใช้งานได้ดีทั้งบนมือถือและคอมพิวเตอร์</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">GACHA TOPUP</div>
+          <p>บริการเติมเกมกาชาสำหรับเกมยอดนิยม ใช้งานง่าย ปลอดภัย ไม่ขอข้อมูลลับของบัญชี</p>
+        </div>
+        <div>
+          <div class="footer__heading">เกมที่รองรับ</div>
+          <div class="footer__links">
+            <a href="games.html?game=genshin">Genshin Impact</a>
+            <a href="games.html?game=hsr">Honkai: Star Rail</a>
+            <a href="games.html?game=zzz">Zenless Zone Zero</a>
+            <a href="games.html?game=wuwa">Wuthering Waves</a>
+            <a href="games.html?game=fgo">Fate/Grand Order</a>
+            <a href="games.html?game=umamusume">Uma Musume Pretty Derby</a>
+            <a href="games.html?game=chaoszero">Chaos Zero Nightmare</a>
+            <a href="games.html?game=limbus">Limbus Company</a>
+            <a href="games.html?game=bluearchive">Blue Archive</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">ช่องทางติดต่อ</div>
+          <div class="footer__links">
+            <a href="#">Line: @gachatopup</a>
+            <a href="#">Facebook Page</a>
+            <a href="#">อีเมลติดต่อแอดมิน</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 GACHA TOPUP. สงวนลิขสิทธิ์.</span>
+        <span>บริการเติมเกมอิสระ ไม่มีส่วนเกี่ยวข้องกับผู้พัฒนาเกมโดยตรง</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

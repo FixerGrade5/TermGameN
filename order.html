@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ยืนยันรายการเติมเกม — GACHA TOPUP</title>
+  <meta name="description" content="ตรวจสอบรายการและกรอกข้อมูลเพื่อยืนยันการเติมเกม">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="index.html">
+      <span class="navbar__brand-mark" aria-hidden="true"></span>
+      GACHA TOPUP
+    </a>
+
+    <nav class="navbar__links" aria-label="เมนูหลัก">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="games.html">เกมทั้งหมด</a>
+      <a href="index.html#how-it-works">วิธีเติม</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="games.html" class="btn btn-primary btn-sm navbar__cta">เติมเกมตอนนี้</a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        class="navbar__toggle"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="navbar-mobile-menu"
+      >&#9776;</button>
+    </div>
+  </header>
+
+  <nav id="navbar-mobile-menu" class="navbar__mobile-menu" aria-label="เมนูมือถือ">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="games.html">เกมทั้งหมด</a>
+    <a href="index.html#how-it-works">วิธีเติม</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="games.html" class="btn btn-primary btn-block">เติมเกมตอนนี้</a>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>ยืนยันรายการเติมเกม</h1>
+        <p>ตรวจสอบรายการที่เลือกให้ถูกต้อง แล้วกรอกข้อมูลเพื่อยืนยันคำสั่งซื้อ</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <form id="orderForm" novalidate>
+
+          <!-- ============ Order Summary (Game / Server / Package / Amount) ============ -->
+          <!-- ฟิลด์เหล่านี้มาจาก Package ที่เลือกในหน้า games.html และเป็น readonly
+               ป้องกันลูกค้าแก้ไขเกม/เซิร์ฟเวอร์/แพ็กเกจ/ราคาเอง -->
+          <fieldset>
+            <legend>สรุปรายการที่เลือก</legend>
+
+            <div class="field">
+              <label for="game">เกม</label>
+              <input type="text" id="game" name="game" class="input" readonly>
+            </div>
+
+            <div class="field">
+              <label for="server">Server</label>
+              <input type="text" id="server" name="server" class="input" readonly>
+            </div>
+
+            <div class="field">
+              <label for="package">Package</label>
+              <input type="text" id="package" name="package" class="input" readonly>
+            </div>
+
+            <div class="field mb-0">
+              <label for="amount">จำนวนเงิน</label>
+              <input type="text" id="amount" name="amount" class="input" readonly>
+              <span class="hint">ราคานี้กำหนดจากแพ็กเกจที่คุณเลือก ไม่สามารถแก้ไขได้</span>
+            </div>
+          </fieldset>
+
+          <!-- ============ Order ID (auto-generated, readonly) ============ -->
+          <div class="field">
+            <label for="orderId">เลขที่คำสั่งซื้อ (Order ID)</label>
+            <input type="text" id="orderId" name="orderId" class="input" readonly>
+            <span class="hint">ใช้เลขนี้อ้างอิงกับแอดมิน — ไม่ใช่รหัสผ่านหรือกลไกความปลอดภัย</span>
+          </div>
+
+          <!-- ============ Customer Info ============ -->
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า <span aria-hidden="true">*</span></label>
+            <input type="text" id="customerName" name="customerName" class="input" placeholder="ชื่อ-นามสกุล หรือชื่อเล่น" required>
+            <span class="field-error" id="customerName-error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="contact">ช่องทางติดต่อ <span aria-hidden="true">*</span></label>
+            <input type="text" id="contact" name="contact" class="input" placeholder="เบอร์โทร หรือ Line ID" required>
+            <span class="field-error" id="contact-error" role="alert"></span>
+          </div>
+
+          <!-- ============ Security Warning ============ -->
+          <div class="alert alert-warning" role="alert">
+            <div>
+              <p><strong>กรุณาตรวจสอบ UID / Player ID และ Server ให้ถูกต้องก่อนส่ง Order</strong></p>
+              <p>ห้ามกรอก Password, OTP หรือรหัสผ่านใดๆ ลงในแบบฟอร์ม</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="playerId">UID / Player ID <span aria-hidden="true">*</span></label>
+            <input type="text" id="playerId" name="playerId" class="input" placeholder="กรอกเฉพาะ UID / Player ID เท่านั้น" required>
+            <span class="hint">ห้ามกรอก Password หรือ OTP ในช่องนี้</span>
+            <span class="field-error" id="playerId-error" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="playerName">ชื่อในเกม</label>
+            <input type="text" id="playerName" name="playerName" class="input" placeholder="ถ้ามี (ไม่บังคับ)">
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ</label>
+            <textarea id="note" name="note" class="textarea" placeholder="ระบุเพิ่มเติมได้ที่นี่ (ถ้ามี) — ห้ามกรอกรหัสผ่านหรือ OTP"></textarea>
+            <span class="field-error" id="note-error" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">ยืนยันคำสั่งซื้อ</button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>&copy; 2026 GACHA TOPUP. สงวนลิขสิทธิ์.</span>
+        <span>บริการเติมเกมอิสระ ไม่มีส่วนเกี่ยวข้องกับผู้พัฒนาเกมโดยตรง</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

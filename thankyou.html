@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสำเร็จ — GACHA TOPUP</title>
+  <meta name="description" content="ยืนยันการส่งคำสั่งซื้อเติมเกมเรียบร้อยแล้ว">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="index.html">
+      <span class="navbar__brand-mark" aria-hidden="true"></span>
+      GACHA TOPUP
+    </a>
+
+    <nav class="navbar__links" aria-label="เมนูหลัก">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="games.html">เกมทั้งหมด</a>
+      <a href="index.html#how-it-works">วิธีเติม</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="games.html" class="btn btn-primary btn-sm navbar__cta">เติมเกมตอนนี้</a>
+      <button
+        type="button"
+        id="navbar-toggle"
+        class="navbar__toggle"
+        aria-label="เปิดเมนู"
+        aria-expanded="false"
+        aria-controls="navbar-mobile-menu"
+      >&#9776;</button>
+    </div>
+  </header>
+
+  <nav id="navbar-mobile-menu" class="navbar__mobile-menu" aria-label="เมนูมือถือ">
+    <a href="index.html">หน้าหลัก</a>
+    <a href="games.html">เกมทั้งหมด</a>
+    <a href="index.html#how-it-works">วิธีเติม</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="games.html" class="btn btn-primary btn-block">เติมเกมตอนนี้</a>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container container--narrow">
+
+        <div id="thankyou-page">
+
+          <div class="alert alert-success" role="status">
+            <p><strong>สั่งซื้อสำเร็จ</strong></p>
+          </div>
+
+          <div class="panel">
+            <dl>
+              <div class="summary-row">
+                <dt>Order ID</dt>
+                <dd id="display-order-id">-</dd>
+              </div>
+              <div class="summary-row">
+                <dt>Game</dt>
+                <dd id="display-game">-</dd>
+              </div>
+              <div class="summary-row">
+                <dt>Package</dt>
+                <dd id="display-package">-</dd>
+              </div>
+              <div class="summary-row summary-row--total">
+                <dt>Amount</dt>
+                <dd id="display-amount">-</dd>
+              </div>
+            </dl>
+          </div>
+
+          <p class="text-center text-muted thankyou-message">
+            เราได้รับข้อมูลของคุณแล้ว กรุณารอการดำเนินการ
+          </p>
+
+          <div class="thankyou-actions">
+            <a href="index.html" class="btn btn-secondary">กลับหน้าหลัก</a>
+            <a href="games.html" class="btn btn-primary">เลือกเกมเพิ่มเติม</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>&copy; 2026 GACHA TOPUP. สงวนลิขสิทธิ์.</span>
+        <span>บริการเติมเกมอิสระ ไม่มีส่วนเกี่ยวข้องกับผู้พัฒนาเกมโดยตรง</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

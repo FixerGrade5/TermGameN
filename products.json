@@ -709,7 +709,7 @@
     "server": "Asia",
     "package": "60 Monochrome",
     "price": 32,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "60 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -720,7 +720,7 @@
     "server": "Asia",
     "package": "300 + 30 Monochrome",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "300 + 30 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -731,7 +731,7 @@
     "server": "Asia",
     "package": "980 + 110 Monochrome",
     "price": 489,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "980 + 110 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -742,7 +742,7 @@
     "server": "Asia",
     "package": "1980 + 260 Monochrome",
     "price": 979,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "1980 + 260 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -753,7 +753,7 @@
     "server": "Asia",
     "package": "3280 + 600 Monochrome",
     "price": 1599,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "3280 + 600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -764,7 +764,7 @@
     "server": "Asia",
     "package": "6480 + 1600 Monochrome",
     "price": 3299,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "6480 + 1600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -775,7 +775,7 @@
     "server": "Asia",
     "package": "Inter-Knot Membership",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Inter-Knot Membership",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -786,7 +786,7 @@
     "server": "Asia",
     "package": "Growth Plan",
     "price": 329,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Growth Plan",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -797,7 +797,7 @@
     "server": "America",
     "package": "60 Monochrome",
     "price": 32,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "60 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -808,7 +808,7 @@
     "server": "America",
     "package": "300 + 30 Monochrome",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "300 + 30 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -819,7 +819,7 @@
     "server": "America",
     "package": "980 + 110 Monochrome",
     "price": 489,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "980 + 110 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -830,7 +830,7 @@
     "server": "America",
     "package": "1980 + 260 Monochrome",
     "price": 979,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "1980 + 260 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -841,7 +841,7 @@
     "server": "America",
     "package": "3280 + 600 Monochrome",
     "price": 1599,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "3280 + 600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -852,7 +852,7 @@
     "server": "America",
     "package": "6480 + 1600 Monochrome",
     "price": 3299,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "6480 + 1600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -863,7 +863,7 @@
     "server": "America",
     "package": "Inter-Knot Membership",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Inter-Knot Membership",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -874,7 +874,7 @@
     "server": "America",
     "package": "Growth Plan",
     "price": 329,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Growth Plan",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -885,7 +885,7 @@
     "server": "Europe",
     "package": "60 Monochrome",
     "price": 32,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "60 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -896,7 +896,7 @@
     "server": "Europe",
     "package": "300 + 30 Monochrome",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "300 + 30 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -907,7 +907,7 @@
     "server": "Europe",
     "package": "980 + 110 Monochrome",
     "price": 489,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "980 + 110 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -918,7 +918,7 @@
     "server": "Europe",
     "package": "1980 + 260 Monochrome",
     "price": 979,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "1980 + 260 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -929,7 +929,7 @@
     "server": "Europe",
     "package": "3280 + 600 Monochrome",
     "price": 1599,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "3280 + 600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -940,7 +940,7 @@
     "server": "Europe",
     "package": "6480 + 1600 Monochrome",
     "price": 3299,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "6480 + 1600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -951,7 +951,7 @@
     "server": "Europe",
     "package": "Inter-Knot Membership",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Inter-Knot Membership",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -962,7 +962,7 @@
     "server": "Europe",
     "package": "Growth Plan",
     "price": 329,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Growth Plan",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -973,7 +973,7 @@
     "server": "TW-HK-MO",
     "package": "60 Monochrome",
     "price": 32,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "60 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -984,7 +984,7 @@
     "server": "TW-HK-MO",
     "package": "300 + 30 Monochrome",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "300 + 30 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -995,7 +995,7 @@
     "server": "TW-HK-MO",
     "package": "980 + 110 Monochrome",
     "price": 489,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "980 + 110 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -1006,7 +1006,7 @@
     "server": "TW-HK-MO",
     "package": "1980 + 260 Monochrome",
     "price": 979,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "1980 + 260 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -1017,7 +1017,7 @@
     "server": "TW-HK-MO",
     "package": "3280 + 600 Monochrome",
     "price": 1599,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "3280 + 600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -1028,7 +1028,7 @@
     "server": "TW-HK-MO",
     "package": "6480 + 1600 Monochrome",
     "price": 3299,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "6480 + 1600 Monochrome",
     "category": "HoYoverse",
     "packageType": "standard"
@@ -1039,7 +1039,7 @@
     "server": "TW-HK-MO",
     "package": "Inter-Knot Membership",
     "price": 159,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Inter-Knot Membership",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -1050,7 +1050,7 @@
     "server": "TW-HK-MO",
     "package": "Growth Plan",
     "price": 329,
-    "image": "images/ Z.jpg",
+    "image": "Z.jpg",
     "description": "Growth Plan",
     "category": "HoYoverse",
     "packageType": "subscription"
@@ -1061,7 +1061,7 @@
     "server": "Asia",
     "package": "60 Lunites",
     "price": 30,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "60 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1072,7 +1072,7 @@
     "server": "Asia",
     "package": "300 + 30 Lunites",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "300 + 30 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1083,7 +1083,7 @@
     "server": "Asia",
     "package": "980 + 110 Lunites",
     "price": 450,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "980 + 110 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1094,7 +1094,7 @@
     "server": "Asia",
     "package": "1980 + 260 Lunites",
     "price": 900,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "1980 + 260 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1105,7 +1105,7 @@
     "server": "Asia",
     "package": "3280 + 600 Lunites",
     "price": 1490,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "3280 + 600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1116,7 +1116,7 @@
     "server": "Asia",
     "package": "6480 + 1600 Lunites",
     "price": 2990,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "6480 + 1600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1127,7 +1127,7 @@
     "server": "Asia",
     "package": "Lunite Subscription",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "Lunite Subscription",
     "category": "Kuro Games",
     "packageType": "subscription"
@@ -1138,7 +1138,7 @@
     "server": "America",
     "package": "60 Lunites",
     "price": 30,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "60 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1149,7 +1149,7 @@
     "server": "America",
     "package": "300 + 30 Lunites",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "300 + 30 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1160,7 +1160,7 @@
     "server": "America",
     "package": "980 + 110 Lunites",
     "price": 450,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "980 + 110 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1171,7 +1171,7 @@
     "server": "America",
     "package": "1980 + 260 Lunites",
     "price": 900,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "1980 + 260 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1182,7 +1182,7 @@
     "server": "America",
     "package": "3280 + 600 Lunites",
     "price": 1490,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "3280 + 600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1193,7 +1193,7 @@
     "server": "America",
     "package": "6480 + 1600 Lunites",
     "price": 2990,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "6480 + 1600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1204,7 +1204,7 @@
     "server": "America",
     "package": "Lunite Subscription",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "Lunite Subscription",
     "category": "Kuro Games",
     "packageType": "subscription"
@@ -1215,7 +1215,7 @@
     "server": "Europe",
     "package": "60 Lunites",
     "price": 30,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "60 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1226,7 +1226,7 @@
     "server": "Europe",
     "package": "300 + 30 Lunites",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "300 + 30 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1237,7 +1237,7 @@
     "server": "Europe",
     "package": "980 + 110 Lunites",
     "price": 450,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "980 + 110 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1248,7 +1248,7 @@
     "server": "Europe",
     "package": "1980 + 260 Lunites",
     "price": 900,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "1980 + 260 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1259,7 +1259,7 @@
     "server": "Europe",
     "package": "3280 + 600 Lunites",
     "price": 1490,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "3280 + 600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1270,7 +1270,7 @@
     "server": "Europe",
     "package": "6480 + 1600 Lunites",
     "price": 2990,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "6480 + 1600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1281,7 +1281,7 @@
     "server": "Europe",
     "package": "Lunite Subscription",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "Lunite Subscription",
     "category": "Kuro Games",
     "packageType": "subscription"
@@ -1292,7 +1292,7 @@
     "server": "SEA",
     "package": "60 Lunites",
     "price": 30,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "60 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1303,7 +1303,7 @@
     "server": "SEA",
     "package": "300 + 30 Lunites",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "300 + 30 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1314,7 +1314,7 @@
     "server": "SEA",
     "package": "980 + 110 Lunites",
     "price": 450,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "980 + 110 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1325,7 +1325,7 @@
     "server": "SEA",
     "package": "1980 + 260 Lunites",
     "price": 900,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "1980 + 260 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1336,7 +1336,7 @@
     "server": "SEA",
     "package": "3280 + 600 Lunites",
     "price": 1490,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "3280 + 600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1347,7 +1347,7 @@
     "server": "SEA",
     "package": "6480 + 1600 Lunites",
     "price": 2990,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "6480 + 1600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1358,7 +1358,7 @@
     "server": "SEA",
     "package": "Lunite Subscription",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "Lunite Subscription",
     "category": "Kuro Games",
     "packageType": "subscription"
@@ -1369,7 +1369,7 @@
     "server": "HMT",
     "package": "60 Lunites",
     "price": 30,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "60 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1380,7 +1380,7 @@
     "server": "HMT",
     "package": "300 + 30 Lunites",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "300 + 30 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1391,7 +1391,7 @@
     "server": "HMT",
     "package": "980 + 110 Lunites",
     "price": 450,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "980 + 110 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1402,7 +1402,7 @@
     "server": "HMT",
     "package": "1980 + 260 Lunites",
     "price": 900,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "1980 + 260 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1413,7 +1413,7 @@
     "server": "HMT",
     "package": "3280 + 600 Lunites",
     "price": 1490,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "3280 + 600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1424,7 +1424,7 @@
     "server": "HMT",
     "package": "6480 + 1600 Lunites",
     "price": 2990,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "6480 + 1600 Lunites",
     "category": "Kuro Games",
     "packageType": "standard"
@@ -1435,7 +1435,7 @@
     "server": "HMT",
     "package": "Lunite Subscription",
     "price": 150,
-    "image": "images/ W.jpg",
+    "image": "W.jpg",
     "description": "Lunite Subscription",
     "category": "Kuro Games",
     "packageType": "subscription"
@@ -1446,7 +1446,7 @@
     "server": "Global",
     "package": "1 Saint Quartz",
     "price": 35,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "1 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1457,7 +1457,7 @@
     "server": "Global",
     "package": "5 Saint Quartz",
     "price": 125,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "5 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1468,7 +1468,7 @@
     "server": "Global",
     "package": "18 Saint Quartz",
     "price": 399,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "18 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1479,7 +1479,7 @@
     "server": "Global",
     "package": "41 Saint Quartz",
     "price": 799,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "41 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1490,7 +1490,7 @@
     "server": "Global",
     "package": "76 Saint Quartz",
     "price": 1299,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "76 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1501,7 +1501,7 @@
     "server": "Global",
     "package": "167 Saint Quartz",
     "price": 2699,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "167 Saint Quartz",
     "category": "Aniplex",
     "packageType": "standard"
@@ -1512,7 +1512,7 @@
     "server": "JP",
     "package": "1 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "1 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1523,7 +1523,7 @@
     "server": "JP",
     "package": "5 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "5 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1534,7 +1534,7 @@
     "server": "JP",
     "package": "18 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "18 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1545,7 +1545,7 @@
     "server": "JP",
     "package": "41 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "41 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1556,7 +1556,7 @@
     "server": "JP",
     "package": "76 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "76 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1567,7 +1567,7 @@
     "server": "JP",
     "package": "167 Saint Quartz",
     "price": null,
-    "image": "images/ F.jpg",
+    "image": "F.jpg",
     "description": "167 Saint Quartz",
     "category": "Aniplex",
     "packageType": "contact"
@@ -1666,7 +1666,7 @@
     "server": "Global",
     "package": "60 Crystals",
     "price": 32,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "60 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1677,7 +1677,7 @@
     "server": "Global",
     "package": "300 Crystals",
     "price": 149,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "300 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1688,7 +1688,7 @@
     "server": "Global",
     "package": "980 Crystals",
     "price": 445,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "980 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1699,7 +1699,7 @@
     "server": "Global",
     "package": "1980 Crystals",
     "price": 870,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "1980 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1710,7 +1710,7 @@
     "server": "Global",
     "package": "3280 Crystals",
     "price": 1450,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "3280 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1721,7 +1721,7 @@
     "server": "Global",
     "package": "6480 Crystals",
     "price": 2850,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "6480 Crystals",
     "category": "Zlongame",
     "packageType": "standard"
@@ -1732,7 +1732,7 @@
     "server": "Global",
     "package": "Monthly Package",
     "price": 163,
-    "image": "images/ C.jpg",
+    "image": "C.jpg",
     "description": "Monthly Package",
     "category": "Zlongame",
     "packageType": "subscription"
@@ -1820,7 +1820,7 @@
     "server": "Global",
     "package": "Pyroxene x120",
     "price": 35,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Pyroxene x120",
     "category": "Nexon Games",
     "packageType": "standard"
@@ -1831,7 +1831,7 @@
     "server": "Global",
     "package": "Monthly Half Pack",
     "price": 99,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Monthly Half Pack",
     "category": "Nexon Games",
     "packageType": "subscription"
@@ -1842,7 +1842,7 @@
     "server": "Global",
     "package": "Monthly Pack",
     "price": 249,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Monthly Pack",
     "category": "Nexon Games",
     "packageType": "subscription"
@@ -1853,7 +1853,7 @@
     "server": "Global",
     "package": "New Teacher Pack",
     "price": 35,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "New Teacher Pack",
     "category": "Nexon Games",
     "packageType": "standard"
@@ -1864,7 +1864,7 @@
     "server": "Global",
     "package": "2-Week AP Pack",
     "price": 99,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "2-Week AP Pack",
     "category": "Nexon Games",
     "packageType": "subscription"
@@ -1875,7 +1875,7 @@
     "server": "Global",
     "package": "Weekly AP Pack",
     "price": 70,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Weekly AP Pack",
     "category": "Nexon Games",
     "packageType": "subscription"
@@ -1886,7 +1886,7 @@
     "server": "JP",
     "package": "Small Pyroxene",
     "price": null,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Small Pyroxene",
     "category": "Nexon Games",
     "packageType": "contact"
@@ -1897,7 +1897,7 @@
     "server": "JP",
     "package": "Medium Pyroxene",
     "price": null,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Medium Pyroxene",
     "category": "Nexon Games",
     "packageType": "contact"
@@ -1908,7 +1908,7 @@
     "server": "JP",
     "package": "Large Pyroxene",
     "price": null,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Large Pyroxene",
     "category": "Nexon Games",
     "packageType": "contact"
@@ -1919,7 +1919,7 @@
     "server": "JP",
     "package": "Premium / Monthly",
     "price": null,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Premium / Monthly",
     "category": "Nexon Games",
     "packageType": "contact"
@@ -1930,7 +1930,7 @@
     "server": "JP",
     "package": "Limited / Event",
     "price": null,
-    "image": "images/ B.jpg",
+    "image": "B.jpg",
     "description": "Limited / Event",
     "category": "Nexon Games",
     "packageType": "contact"

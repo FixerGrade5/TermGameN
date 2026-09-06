@@ -615,11 +615,13 @@
       note: fields.note ? fields.note.value.trim() : ''
     };
 
-    fetch(https://script.google.com/macros/s/AKfycbyspAjhfrdcm2aYqN1TA1hmvB0kurpuVmmyQW973fBDUK4EHpkVJ5MtJMII_MFvwD26/exec
-, {
-      method: 'POST',
-      body: JSON.stringify(payload)
-    })
+    fetch('https://script.google.com/macros/s/AKfycbwar3qTsv_boSYC8X8eF_keyb20Gus4pkp-bdjGr0Fk_d9ZVr1lJO-IEguRB1OzZL24/exec', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'text/plain;charset=utf-8'
+  },
+  body: JSON.stringify(payload)
+})
       .then(function (res) {
         if (!res.ok) {
           throw new Error('ส่ง Order ไม่สำเร็จ: HTTP ' + res.status);

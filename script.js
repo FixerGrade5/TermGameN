@@ -615,7 +615,7 @@
       note: fields.note ? fields.note.value.trim() : ''
     };
 
-    fetch(https://script.google.com/macros/s/AKfycbyspAjhfrdcm2aYqN1TA1hmvB0kurpuVmmyQW973fBDUK4EHpkVJ5MtJMII_MFvwD26/exec
+    fetch(https://script.google.com/macros/s/AKfycbyspAjhfrdcm2aYqN1TA1hmvB0kurpuVmmyQW973fBDUK4EHpkVJ5MtJMII_MFvwD26/exec)
 , {
       method: 'POST',
       body: JSON.stringify(payload)

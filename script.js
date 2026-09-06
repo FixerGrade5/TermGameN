@@ -735,13 +735,13 @@
     setVisible(emptyEl, false);
     setVisible(errorEl, false);
 
-    fetch(https://docs.google.com/spreadsheets/d/e/2PACX-1vRnqkRQWkzwSnN5RpPq76iVsT12VYpTRaz6WGD_IPq4RCmUX1ctjmZeZYKU7FypWMD4kZp9Yt_7_QMJ/pub?gid=0&single=true&output=csv
-      .then(function (res) {
-        if (!res.ok) {
-          throw new Error('โหลดข้อมูล Order ไม่สำเร็จ: HTTP ' + res.status);
-        }
-        return res.text();
-      }))
+    fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vRnqkRQWkzwSnN5RpPq76iVsT12VYpTRaz6WGD_IPq4RCmUX1ctjmZeZYKU7FypWMD4kZp9Yt_7_QMJ/pub?gid=0&single=true&output=csv')
+  .then(function (res) {
+    if (!res.ok) {
+      throw new Error('โหลดข้อมูล Order ไม่สำเร็จ: HTTP ' + res.status);
+    }
+    return res.text();
+  })
       .then(function (csvText) {
         var rows = parseCSV(csvText);
         state.allOrders = csvRowsToOrders(rows);
